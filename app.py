@@ -57,9 +57,8 @@ parch = form.number_input('pais/filhos', step=1)
 submitted = form.form_submit_button(label='Submeter')
 st.sidebar.text("\n")
 st.sidebar.caption("Feito por Felipe Muros")
-st.sidebar.write("[Linkedin](https://www.linkedin.com/in/felipe-muros-48367433/)")
+st.sidebar.write("[LinkedIn](https://www.linkedin.com/in/felipe-muros-48367433/)")
 st.sidebar.write("[GitHub](https://github.com/murosfc)")
-st.sidebar.write("[Reposiório do projeto](https://github.com/murosfc/titanic-streamlit)")
 
 if submitted:
     #['Age', 'Sex', 'Pclass',  'SibSp', 'Parch']
