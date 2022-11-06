@@ -66,10 +66,10 @@ def layout(*args):
 def footer():
     myargs = [
         "Made in with ❤️ by Felipe Muros ",
-        link("https://www.linkedin.com/in/felipe-muros-48367433/", image("/images/linkedin.png")), 
-        link("https://github.com/murosfc", image("github.png")),
+        link("https://www.linkedin.com/in/felipe-muros-48367433/", image("https://github.com/murosfc/murosfc.github.io/blob/main/images/linkedin.png")), 
+        link("https://github.com/murosfc", image("https://github.com/murosfc/murosfc.github.io/blob/main/images/github.png")),
         " Project available at ",
-        link("https://github.com/murosfc/titanic-streamlit", image("/images/github.png")),        
+        link("https://github.com/murosfc/titanic-streamlit", image("https://github.com/murosfc/murosfc.github.io/blob/main/images/github.png")),        
     ]
     layout(*myargs)
 
