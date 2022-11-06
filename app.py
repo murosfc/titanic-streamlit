@@ -26,6 +26,7 @@ def getResult(modelo, passageiro):
 
 #APP
 #obter score e modelo
+st.set_page_config('Titanic - Felipe Muros')
 score, modelo = randomForest()
 
 ##main
