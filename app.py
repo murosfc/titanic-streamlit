@@ -6,8 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import RandomForestRegressor
 
-import app_footer
-
 #Função que carrega e treina o modelo
 def randomForest():
     #Obtenão dos dados
@@ -57,9 +55,11 @@ sibsp = form.number_input('conjuge/irmãos', step=1)
 form.caption('Total de pais e/ou filhos') 
 parch = form.number_input('pais/filhos', step=1)
 submitted = form.form_submit_button(label='Submeter')
-
-#carrega o rodapé
-app_footer.footer()
+st.sidebar.text("\n")
+st.sidebar.caption("Feito por Felipe Muros")
+st.sidebar.write("[Linkedin](https://www.linkedin.com/in/felipe-muros-48367433/)")
+st.sidebar.write("[GitHub](https://github.com/murosfc)")
+st.sidebar.write("[Reposiório do projeto](https://github.com/murosfc/titanic-streamlit)")
 
 if submitted:
     #['Age', 'Sex', 'Pclass',  'SibSp', 'Parch']
@@ -76,3 +76,11 @@ if submitted:
     st.text('\n')
     st.caption('{}{:.2f}{}'.format('Taxa de precisão o modelo: ', score*100, '%'))
 
+#esconder o footer
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
